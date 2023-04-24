@@ -1,0 +1,80 @@
+class Registration {
+
+    public static void main(String[] args)
+                           throws Exception
+                       
+   {
+
+      MyFrame f = new MyFrame();
+   
+   } 
+   
+}
+
+// Java program to implement
+// a Simple Registration Form
+// using Java Swing
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+class MyFrame
+    extends JFrame
+    implements ActionListener [
+    
+    // Components of the Form
+    private Container c;
+    private JLabel name;
+    private JTextField tname;
+    private JRadioButton male;
+    private JRadioButton female;
+    private JRadioButton gengp;
+    private JLabel age;
+    private JBox;
+    private JLabel add;
+    private JTextArea tadd;
+    private JCheckbox term;
+    private JButton reset;
+    
+    private String age[]
+        = { "16" , "17" , "18" , "19" , "20" , "21" , "22" , "23" , "24" ,
+            "25" , "26" , "27" , "28" , "29" , "30" , "31" , "32" , "33" ,
+            "34" , "35" , "36" , "37" , "38" , "39" , "40" , "41" , "42" ,
+            "43" , "44" , "45" , "46" , "47" , "48" , "49" , "50" , "51" ,
+            "52" , "53" , "54" , "55" , "56" , "57" , "58" , "59" , "60" ,
+            "61" , "62" , "63" , "64" , "65" } ;
+            
+    // constructor, to initialise the components 
+    // with default values.
+    public MyFrame ()
+    {
+        setTitle( "Registration Form" );
+        setDefaultCloseOperation(EXIT);
+        setResizable( false);
+        
+        c = getContentPane();
+        c.setLayout(null);
+        
+        title = JLabel( "Registration Form");
+        title.setFont(new Font("Arial" , Font.PLAIN, 34));
+        title.setSize(340,34);
+        c.add(title);
+        
+        name = new JLabel("Name");
+        name.setFont(new Font("Arial" , Font.PLAIN, 30));
+        name.setSize(300,30);
+        c.add(name);
+        
+        tname = new JTextField();
+        tname.setFont (new Font("Arial" , Font.PLAIN, 20));
+        tname.setSize(200,20);
+        c.add(tname);
+        
+        gender = new JLabel("Gender");
+        gender.setFont(new Font("Arial" , Font.PLAIN,  15));
+        gender.setSize(100,15);
+        
+    
+    
+   
